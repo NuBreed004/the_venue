@@ -18,7 +18,7 @@ class SideDrawer extends Component {
 
   render() {
 
-      const list = ['Inbox', 'Starred', 'Send Mail', 'Drafts']
+      const list = ['Event Starts In', 'Venue Info', 'Highlights', 'Pricing', 'Location']
 
       return (
           <Drawer
@@ -26,9 +26,9 @@ class SideDrawer extends Component {
             open={this.props.open}
             onClose={() => this.props.onClose(false)}
           >
-            <List className={this.props.classes.list}>
+            <List component="nav" className={this.props.classes.list}>
               { list.map(item => (
-                <ListItem button key={item}>
+                <ListItem onClick={()=> console.log('Featured')} button key={item}>
                   {item}
                 </ListItem>
               )) }
