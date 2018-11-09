@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import Slide from 'react-reveal/Slide';
+
 
 class TimeUntil extends Component {
 
   state = {
 
   }
-
   renderTimes = () => {
 
   }
 
 
-
-
-
-
   render() {
     return (
+      <Slide left delay={1000}>
       <div className="countdown_wrapper">
         <div className="countdown_top">
           Event Starts In
@@ -30,35 +28,34 @@ class TimeUntil extends Component {
               Days
             </div>
           </div>
-            <div className="countdown_item">
-              <div className="countdown_time">
-                2
-              </div>
-              <div className="countdown_tag">
-                Hours
-              </div>
+          <div className="countdown_item">
+            <div className="countdown_time">
+              2
             </div>
-            <div className="countdown_item">
-              <div className="countdown_time">
-                15
-              </div>
-              <div className="countdown_tag">
-                Minutes
-              </div>
+            <div className="countdown_tag">
+              Hours
             </div>
-              <div className="countdown_item">
-                <div className="countdown_time">
-                  00
-                </div>
-                <div className="countdown_tag">
-                  Seconds
-                </div>
-              </div>
+          </div>
+          <div className="countdown_item">
+            <div className="countdown_time">
+              15
+            </div>
+            <div className="countdown_tag">
+              Minutes
+            </div>
+          </div>
+          <div className="countdown_item">
+            <div className="countdown_time">
+              00
+            </div>
+            <div className="countdown_tag">
+              Seconds
+            </div>
+          </div>
         </div>
       </div>
-    );
+    </Slide>
+  );
   }
-
 }
-
 export default TimeUntil;
