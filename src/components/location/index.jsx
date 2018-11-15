@@ -7,6 +7,7 @@ const Location = () => (
       width="100%"
       height="500px"
       frameBorder="0"
+      title="google"
       allowFullScreen></iframe>
 
       <div className="location_tag">

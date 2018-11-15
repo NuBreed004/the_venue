@@ -14,14 +14,19 @@ import Highlights from './components/highlights';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{height: '1500px', boxShadow: 'none', padding: '10px 0'}}>
+      <div className="App" style={{height: '1500px', boxShadow: 'none'}}>
 
         <Element name="Event Starts In">
           <Header />
         </Element>
 
-        <Featured />
-        <VenueNfo />
+        <Element name="Highlights">
+          <Featured />
+        </Element>
+
+        <Element name="Venue Info">
+          <VenueNfo />
+        </Element>
 
         <Element name="Highlights">
           <Highlights />
