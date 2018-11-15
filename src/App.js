@@ -20,7 +20,7 @@ class App extends Component {
             boxShadow: 'none',
             padding: '10px 0px'
           }}
-          >
+        >
           <Toolbar>
 
             <div className="header_logo">
