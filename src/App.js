@@ -11,7 +11,7 @@ import Highlights from './components/highlights';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{height: '1500px'}}>
+      <div className="App" style={{height: '1500px', boxShadow: 'none', padding: '10px 0'}}>
         <Header />
         <Featured />
         <VenueNfo />
