@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './resources/styles.css';
 
-
+import Pricing from './components/pricing';
 import Featured from './components/featured';
 import Header from './components/header';
 import VenueNfo from './components/venueNfo';
@@ -16,6 +16,7 @@ class App extends Component {
         <Featured />
         <VenueNfo />
         <Highlights />
+        <Pricing />
       </div>
     )
   }
