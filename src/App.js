@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './resources/styles.css';
 
+import Location from './components/location';
 import Pricing from './components/pricing';
 import Featured from './components/featured';
 import Header from './components/header';
@@ -17,6 +18,7 @@ class App extends Component {
         <VenueNfo />
         <Highlights />
         <Pricing />
+        <Location />
       </div>
     )
   }
