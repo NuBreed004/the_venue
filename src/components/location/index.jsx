@@ -7,7 +7,7 @@ const Location = () => (
       width="100%"
       height="500px"
       frameBorder="0"
-      allowFullscreen></iframe>
+      allowFullScreen></iframe>
 
       <div className="location_tag">
         <div>Location</div>
