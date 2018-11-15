@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './resources/styles.css';
+import { Element } from 'react-scroll';
 
+import Footer from './components/footer';
 import Location from './components/location';
 import Pricing from './components/pricing';
 import Featured from './components/featured';
@@ -13,12 +15,28 @@ class App extends Component {
   render() {
     return (
       <div className="App" style={{height: '1500px', boxShadow: 'none', padding: '10px 0'}}>
-        <Header />
+
+        <Element name="Event Starts In">
+          <Header />
+        </Element>
+
         <Featured />
         <VenueNfo />
-        <Highlights />
-        <Pricing />
-        <Location />
+
+        <Element name="Highlights">
+          <Highlights />
+        </Element>
+
+        <Element name="Pricing">
+          <Pricing />
+        </Element>
+
+        <Element name="Location">
+          <Location />
+        </Element>
+
+
+        <Footer />
       </div>
     )
   }
